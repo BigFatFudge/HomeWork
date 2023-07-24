@@ -8,7 +8,7 @@ export const CrudTableRow = ({el, setDataToEdit, deleteData}) => {
             <td>{el.constellation}</td>
             <td>
                 <button>Editar</button>
-                <button onClick={()=> deleteData(id)}>Eliminar</button>
+                <button type="button"   onClick={()=> deleteData(id)}>Eliminar</button>
             </td>
         </tr>
     </div>
