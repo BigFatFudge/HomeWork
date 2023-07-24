@@ -12,5 +12,16 @@
   }
 
   form {
-    
+    margin-bottom: 1rem;
+  }
+
+  table{
+    border-radius: 5px;
+    border: 1px solid #3a68be;
+  }
+
+  td {
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid #3a68be;
   }

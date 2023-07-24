@@ -23,7 +23,7 @@ export const CrudForm = ({createData, updateData, dataToEdit, setDataToEdit}) =>
   const handleChange = (e) => {
        setForm({
               ...form,
-              [e.target,name]:e.target.value,
+              [e.target,name]: e.target.value,
          });
   }
   // para agregar datos a la tabla con el input, revisar si llega a ser necesario o si hay que eliminarlo
