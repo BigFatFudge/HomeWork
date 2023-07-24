@@ -1,0 +1,12 @@
+.containerOpciones {
+    padding: 20px;
+    background-color: #fff;/#E6F2FD;/
+    border: 1px solid #3A68BE;
+    border-radius: 5px;
+    margin-top: 15px; 
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+  }
