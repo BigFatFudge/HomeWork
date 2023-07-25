@@ -1,14 +1,17 @@
 import React from 'react'
 
-export const CrudTableRow = ({id, el, setDataToEdit, deleteData}) => {
+export const CrudTableRow = ({el, setDataToEdit, deleteData}) => {
+  
+  let { name, constellation, id } = el;
+  
   return (
     <div>
         <tr>
             <td>{el.name}</td>
             <td>{el.constellation}</td>
             <td>
-                <button type="button" className="btn btn-primary">Editar</button>
-                <button type="button" className="btn btn-primary"  onClick={()=> deleteData(id)}>Eliminar</button>
+                <button className="btn btn-primary">Modificar</button>
+                <button className="btn btn-primary"  onClick={()=> deleteData(id)}>Eliminar</button>
             </td>
         </tr>
     </div>

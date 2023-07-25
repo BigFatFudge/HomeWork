@@ -82,6 +82,9 @@ const CrudApp = () => {
   return (
     <div>
         <h2>Curd App ABM</h2>
+        <form>
+          <table>
+
           <CrudForm 
             dataToEdit={dataToEdit}
             setDataToEdit={setDataToEdit}/>
@@ -90,10 +93,12 @@ const CrudApp = () => {
             setDataToEdit={setDataToEdit}
             deleteData={deleteData}
             />
-        <form></form>
-        <table></table>
+
+        </table>
+            </form>
     </div>
   )
 };
 
+//form y table estaban abajo de los react elements
 export default CrudApp

@@ -1,23 +1,26 @@
 import React, { useState } from 'react'
 import { CrudTable } from '../CrudTable';
 import CrudForm from './CrudForm';
+import { helpHttp } from '../helpers/helpHttp';
 
 const CrudApi = () => {
 
     const [db, setDb] = useState([]);
-  
     const [dataToEdit, setDataToEdit] = useState(null); //si viene null, es una nueva columna
   
-    // const createData = (data) => {
-    //   data.id = Data.now();
-    //   //console.log(data)
-    //   setdb([...db, data])
-    // }
+    const api = helpHttp();
+    const url = "http://localhost:3000/santos";
+
+    const createData = (data) => {
+      data.id = Date.now();
+      //console.log(data)
+      setDb([...db, data])
+    }
   
-    // const updateData = (data) => {
-    //   let newData = db.map(el => el.id === data.id ? data : el)
-    //   setdb(newData)
-    // }
+    const updateData = (data) => {
+      let newData = db.map(el => el.id === data.id ? data : el)
+      setDb(newData)
+    }
   
     const deleteData = (id) => {
       let isDelete = window.confirm(
